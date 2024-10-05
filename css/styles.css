@@ -5,23 +5,28 @@
   } 
    
   body { 
-    background-color: #40ff19; 
-    background: linear-gradient(90deg, #40ff19 0%, #40ff19 100%); 
-    color: #222; 
+    background-color: #f8bfff; 
+    color: #222;  
     font-size: 1rem; 
     display: flex; 
     justify-content: center; 
     align-items: center; 
     width: 100vw; 
     height: 100vh; 
+    font-family: sans-serif;
   } 
    
+  .container{
+    box-shadow: 2px 2px 20px rgb(0, 0, 0);
+    border-radius: 4px;
+  }
+
   .mobile { 
     display: flex; 
     justify-content: space-between; 
     margin-bottom: 40px; 
     font-size: 18px; 
-    font-weight: 700; 
+    font-weight: 500; 
   } 
    
   .temperature-converter { 
@@ -41,7 +46,7 @@
    
   .title { 
     color: #222; 
-    font-size: 1.5rem; 
+    font-size: 1.3rem; 
     text-align: center; 
   } 
   .result { 
@@ -51,7 +56,7 @@
   .result-heading { 
     color: #555; 
     font-size: 1rem; 
-    font-weight: 600; 
+    
   } 
   .celsius-value { 
     border-bottom: 2px solid #ccc; 
@@ -73,7 +78,8 @@
     margin-bottom: 15px; 
   } 
   input:focus { 
-    border: 1px solid #4c49f3; 
+    border: 1px solid #000000; 
+    border-radius: 4px;
   } 
   .degree-type { 
     display: flex; 
@@ -87,11 +93,13 @@
     width: 60%; 
   } 
   option { 
-    background-color: #81ec29; 
+    background-color: #000000; 
     color: #f6f6f6; 
+    border-radius: 4px;
   } 
+  
   #convert-btn { 
-    background: linear-gradient(to bottom, #3633f3, #120fb9); 
+    background-color: hsl(295, 100%, 28%);
     border: none; 
     outline: none; 
     border-radius: 5px; 
@@ -105,11 +113,9 @@
     transition: all 0.3s ease-in; 
   } 
   #convert-btn:hover { 
-    background: linear-gradient(to bottom, #80ff18, #8ddd25); 
+  background-color: green; 
   } 
-   
-  /* Add a right margin to each icon */ 
-   
+
   .fa { 
     margin-left: -12px; 
     margin-right: 8px; 
